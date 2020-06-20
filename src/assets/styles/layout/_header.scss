@@ -1,0 +1,48 @@
+.page-header {
+  @include pxRem(height, 96);
+  @include pxRem(font-size, map-get($font-size, sm));
+  background: map-get($color, white);
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  color: map-get($color, black);
+  font-weight: 700;
+  a {
+    color: map-get($color, white);
+  }
+  .container {
+    height: 100%;
+    position: relative;
+  }
+  .page-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .header-item-left,
+  .header-item-right {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-item-center {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-menu {
+    .nav-menu-item {
+      @include pxRem(padding, 0 22);
+    }
+  }
+  .logo {
+    @include pxRem(width, 106);
+  }
+}

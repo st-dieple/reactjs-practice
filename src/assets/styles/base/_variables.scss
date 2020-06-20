@@ -1,0 +1,38 @@
+$font-family-default: 'Catamaran', sans-serif;;
+// == Breakpoints ===
+$breakpoints: (
+  small: 480px,
+  medium: 768px,
+  wide: 960px,
+  large: 1024px,
+  largest: 1280px
+);
+$color: (
+  primary: #f3f3f3,
+  secondary: #554E8F,
+  border: #e2e2e2,
+  text: #82A0B7,
+  background: #F9FCFF,
+  white: #ffffff,
+  black: #080808,
+  yellow: #FFD506,
+  green-light: #49b4af,
+  danger: #dd4b39
+);
+$font-size: (
+  sm: 12,
+  md: 14,
+  lg: 16,
+  xl: 20
+);
+$font-icon: (
+  icon-add: "\e900",
+  icon-all: "\e901",
+  icon-planning: "\e902",
+  icon-completed: "\e903",
+  icon-remove: "\e904",
+  icon-list: "\e905",
+  icon-alls: "\e906",
+  icon-close: "\e907",
+  icon-trash: "\e908",
+)
