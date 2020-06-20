@@ -9,6 +9,10 @@
   z-index: 99;
   color: map-get($color, black);
   font-weight: 700;
+  &::after {
+    @include pxRem(height, 96);
+    content: '';
+  }
   a {
     color: map-get($color, white);
   }
