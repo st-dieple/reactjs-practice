@@ -1,4 +1,6 @@
-$font-family-default: 'Catamaran', sans-serif;;
+$font-family-default: 'Catamaran', sans-serif;
+$font-family-secondary: 'Montserrat', sans-serif;
+
 // == Breakpoints ===
 $breakpoints: (
   small: 480px,
@@ -10,7 +12,7 @@ $breakpoints: (
 $color: (
   primary: #f3f3f3,
   secondary: #554E8F,
-  border: #e2e2e2,
+  border: #f5f3f3,
   white: #ffffff,
   black: #080808,
   content-text: #999999,

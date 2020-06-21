@@ -1,5 +1,6 @@
 .page-banner {
   @include pxRem(height, 540);
+  @include pxRem(margin-bottom, 100);
   @include pxRem(font-size, map-get($font-size, lg));
   overflow: hidden;
   color: map-get($color, content-text);

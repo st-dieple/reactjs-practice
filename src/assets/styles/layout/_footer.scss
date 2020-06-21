@@ -1,8 +1,4 @@
 .page-footer {
-  background: map-get($color, white);
-  position: fixed;
-  z-index: 2;
-  bottom: 0;
-  width: 100%;
-  height: auto;
+  @include pxRem(padding, 13 0);
+  border-top: 1px solid map-get($color, border);
 }
