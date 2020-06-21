@@ -1,13 +1,15 @@
 .product-list {
   .product-list-inner {
-    width: 100%;
+    @include pxRem(margin, 0 -25);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    
   }
   .product-list-item {
+    @include pxRem(padding, 0 25);
     display: inline-block;
-    width: 22%;
+    width: 25%;
   }
 }
 
