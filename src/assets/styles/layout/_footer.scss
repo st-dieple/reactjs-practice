@@ -1,0 +1,4 @@
+.page-footer {
+  @include pxRem(padding, 13 0);
+  border-top: 1px solid map-get($color, border);
+}

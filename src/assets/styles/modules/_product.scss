@@ -1,0 +1,30 @@
+.product-list {
+  .product-list-inner {
+    @include pxRem(margin, 0 -25);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .product-list-item {
+    @include pxRem(padding, 0 25);
+    display: inline-block;
+    width: 25%;
+  }
+}
+
+.product {
+  @include pxRem(padding-bottom, 50);
+  text-align: center;
+  .product-info {
+    @include pxRem(margin, 22 0 12);
+    font-size: map-get($font-size, md);
+  }
+  .product-name {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .product-price {
+    font-family: $font-family-secondary;
+    color: map-get($color, content-text);
+  }
+}
