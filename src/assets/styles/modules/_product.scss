@@ -15,7 +15,7 @@
 .product {
   @include pxRem(padding-bottom, 50);
   text-align: center;
-  .product-info {
+  .product-text-wrapper {
     @include pxRem(margin, 22 0 12);
     font-size: map-get($font-size, md);
   }
@@ -26,5 +26,24 @@
   .product-price {
     font-family: $font-family-secondary;
     color: map-get($color, content-text);
+  }
+  .product-inner {
+    position: relative;
+    line-height: 0;
+    overflow: hidden;
+    &:hover {
+      .product-action {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+    }
+    .product-action {
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 100%);
+      transition: all .2s ease-out;
+    }
   }
 }
