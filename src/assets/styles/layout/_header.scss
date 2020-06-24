@@ -39,6 +39,10 @@
   .nav-menu {
     .nav-menu-item {
       @include pxRem(padding, 0 22);
+      .total {
+        @include pxRem(padding-left, 5);
+        font-size: map-get($font-size, sm);
+      }
     }
   }
   .logo {
