@@ -16,7 +16,10 @@ function Header() {
           </div>
         </div>
         <ul className="header-item-right nav-menu">
-          <li className="nav-menu-item">CART</li>
+          <li className="nav-menu-item">
+            CART
+            <span className="total text-number">($15)</span>
+          </li>
           <li className="nav-menu-item">LOGIN</li>
         </ul>
       </div>

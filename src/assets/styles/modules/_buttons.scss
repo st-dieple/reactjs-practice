@@ -1,20 +1,16 @@
 button, .btn {
-  @include pxRem(padding, 10 30);
-  @include pxRem(line-height, 21);
-  @include pxRem(font-size, map-get($font-size, md));
-  @include pxRem(border-radius, 35);
-  cursor: pointer;
+  @include pxRem(padding, 10 20);
+  @include pxRem(font-size, map-get($font-size, sm));
+  display: inline-block;
   width: 100%;
-  transition: all 500ms ease;
-  color: map-get($color, text);
-  background: map-get($color, white);
+  border: none;
   outline: none;
-  text-decoration: none;
   text-align: center;
   vertical-align: middle;
-  font-weight: bold;
-  display: inline-block;
-  border: none;
+  color: map-get($color, black);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 500ms ease;
   &:disabled {
     color: map-get($color, white);
     cursor: not-allowed;
@@ -26,7 +22,6 @@ button, .btn {
 }
 .btn-primary {
   @include pxRem(max-width, 180);
-  background-color: map-get($color, primary);
-  border: 1px solid map-get($color, primary);
   color: map-get($color, white);
+  background-color: map-get($color, black);
 }

@@ -3,6 +3,7 @@ import Header from '../components/layout/header';
 import Footer from '../components/layout/footer';
 import Banner from '../components/layout/banner';
 import ProductList from '../components/features/product-list';
+import DataBindingPrac from '../components/features/data-binding-prac';
 
 function fetchData() {
   const products = [
@@ -76,6 +77,9 @@ function Home() {
     <div className="Home">
       <Header />
       <Banner />
+      <DataBindingPrac title={'Welcome to DEPOT!'}>
+        <p>Children props</p>
+      </DataBindingPrac>
       <div className="page-wrapper">
         <ProductList products={products}/>
       </div>
